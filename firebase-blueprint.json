@@ -1,0 +1,23 @@
+{
+  "collections": [
+    {
+      "name": "reservations",
+      "fields": [
+        { "name": "name", "type": "string", "description": "Customer name" },
+        { "name": "phone", "type": "string", "description": "Customer phone" },
+        { "name": "package", "type": "string", "description": "Selected package" },
+        { "name": "guests", "type": "string", "description": "Number of guests" },
+        { "name": "date", "type": "timestamp", "description": "Reservation date" },
+        { "name": "status", "type": "string", "description": "Reservation status" },
+        { "name": "createdAt", "type": "timestamp", "description": "Creation timestamp" }
+      ],
+      "access": "Public read, create. No update or delete.",
+      "indexes": [
+        {
+          "fields": ["date"],
+          "reason": "Query reservations by date range to display booked dates."
+        }
+      ]
+    }
+  ]
+}

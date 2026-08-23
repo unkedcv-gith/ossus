@@ -1,0 +1,6 @@
+{
+  "name": "OSSUS Eventos",
+  "description": "Sitio de reservas para espacio de eventos OSSUS",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
